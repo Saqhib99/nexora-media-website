@@ -1,0 +1,23 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g" x1="60" y1="40" x2="300" y2="280" gradientUnits="userSpaceOnUse">
+<stop stop-color="#40D6FF"/>
+<stop offset="0.52" stop-color="#0A84FF"/>
+<stop offset="1" stop-color="#0066FF"/>
+</linearGradient>
+<filter id="glow" x="-40" y="-40" width="400" height="400" filterUnits="userSpaceOnUse">
+<feGaussianBlur stdDeviation="18" result="blur"/>
+<feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.04 0 0 0 0 0.52 0 0 0 0 1 0 0 0 .55 0"/>
+<feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+</filter>
+</defs>
+<rect width="1200" height="320" rx="60" fill="white" fill-opacity="0"/>
+<g filter="url(#glow)">
+<path d="M160 44L276 160L160 276L44 160L160 44Z" fill="url(#g)"/>
+<path d="M160 83L237 160L160 237L83 160L160 83Z" fill="white" fill-opacity=".18"/>
+<path d="M160 110L210 160L160 210L110 160L160 110Z" fill="#05070C"/>
+<path d="M151 121L199 160L151 199V121Z" fill="#40D6FF"/>
+</g>
+<text x="335" y="143" fill="#05070C" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="800" letter-spacing="-4">Nexora Media</text>
+<text x="340" y="204" fill="#5D6576" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" letter-spacing="4">CREATIVE MARKETING AGENCY</text>
+</svg>

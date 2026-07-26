@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <!-- =========================================================
+         Nexora Media Premium Agency Website
+         Files are separated: index.html, styles.css, script.js
+         Replace images/logo.png and images/logo-dark.png whenever needed. Keep the same filenames for easy future logo updates.
+    ========================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A84FF">
+    <meta name="color-scheme" content="light dark">
+    <title>Nexora Media | Creative Marketing & Social Media Agency</title>
+    <meta name="description"
+        content="Nexora Media is a premium creative marketing agency helping businesses grow through branding, social media marketing, paid ads, video production and modern website development.">
+    <meta name="keywords"
+        content="Nexora Media, creative marketing agency, social media agency, branding, Meta Ads, Google Ads, website design, video editing">
+    <meta name="author" content="Nexora Media">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://www.yourdomain.com/">
+    <meta name="google-site-verification" content="ADD_YOUR_SEARCH_CONSOLE_CODE_HERE">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nexora Media | Creative Marketing & Social Media Agency">
+    <meta property="og:description"
+        content="We build memorable brands through creative content, social media marketing, branding, paid ads, video production and modern websites.">
+    <meta property="og:url" content="https://www.yourdomain.com/">
+    <meta property="og:image" content="https://www.yourdomain.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Nexora Media">
+    <meta property="og:locale" content="en_IN">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nexora Media | Creative Marketing & Social Media Agency">
+    <meta name="twitter:description"
+        content="Premium creative marketing, branding, social media, paid ads, video and websites for growing businesses.">
+    <meta name="twitter:image" content="https://www.yourdomain.com/images/og-image.jpg">
+    <!-- Icons -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Font preconnect only; font loading is handled in styles.css -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Connected CSS file: keep this exact name -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Schema.org JSON-LD -->
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Nexora Media","url":"https://www.yourdomain.com/","logo":"https://www.yourdomain.com/images/logo.png","description":"Nexora Media is a creative marketing agency helping businesses grow through powerful content, strategic branding, social media marketing, advertising and modern digital experiences.","telephone":"+918895707670","email":"teamnexoramediain@gmail.com","areaServed":"Remote","sameAs":["https://www.instagram.com/nexoramediain"],"address":{"@type":"PostalAddress","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","telephone":"+918895707670","contactType":"customer service","areaServed":"IN","availableLanguage":["English","Hindi"]}}</script>
+    <!-- Connected JavaScript file: keep this exact name -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Accessibility and Progress -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress-bar"></span></div>
+    <!-- Loading Screen -->
+    <div class="loader" id="page-loader" role="status" aria-live="polite" aria-label="Nexora Media website loading">
+        <div class="loader-glow" aria-hidden="true"></div>
+        <div class="loader-card">
+            <img src="images/logo.png" data-logo-light="images/logo.png" data-logo-dark="images/logo-dark.png"
+                alt="Nexora Media Logo" class="loader-logo">
+            <div class="loader-text">
+                <span>Nexora Media</span>
+                <small>Preparing a premium digital experience</small>
+            </div>
+            <div class="loader-line" aria-hidden="true"><span></span></div>
+        </div>
+    </div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="cursor-label" aria-hidden="true">View</div>
+    <!-- Ambient Background -->
+    <div class="site-ambient" aria-hidden="true">
+        <span class="ambient-orb ambient-orb-one"></span>
+        <span class="ambient-orb ambient-orb-two"></span>
+        <span class="ambient-orb ambient-orb-three"></span>
+        <span class="ambient-grid"></span>
+    </div>
+    <!-- Sticky Navigation -->
+    <header class="site-header" id="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="#home" class="brand magnetic-link" aria-label="Nexora Media home">
+                <img src="images/logo.png" data-logo-light="images/logo.png" data-logo-dark="images/logo-dark.png"
+                    alt="Nexora Media Logo" class="brand-logo">
+                <span class="brand-name">Nexora Media</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-panel" id="primary-navigation">
+                <ul class="nav-links" role="list">
+                    <li><a href="#home" class="nav-link active" data-section-link>Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section-link>About</a></li>
+                    <li><a href="#services" class="nav-link" data-section-link>Services</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-section-link>Portfolio</a></li>
+                    <li><a href="#faq" class="nav-link" data-section-link>FAQ</a></li>
+                    <li><a href="#contact" class="nav-link" data-section-link>Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="https://wa.me/918895707670?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services."
+                        class="btn btn-primary btn-small magnetic-button" target="_blank" rel="noopener noreferrer"
+                        data-ripple>
+                        <span>Get a Quote</span>
+                        <span class="btn-icon" aria-hidden="true">↗</span>
+                    </a>
+                    <button class="theme-toggle magnetic-button" type="button" aria-label="Toggle dark mode"
+                        aria-pressed="false" id="theme-toggle">
+                        <span class="theme-toggle-track" aria-hidden="true">
+                            <span class="theme-toggle-thumb">
+                                <span class="theme-icon theme-icon-sun">☀</span>
+                                <span class="theme-icon theme-icon-moon">☾</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero section" id="home" aria-labelledby="hero-title">
+            <div class="hero-background" aria-hidden="true">
+                <div class="mesh mesh-one"></div>
+                <div class="mesh mesh-two"></div>
+                <div class="mesh mesh-three"></div>
+                <div class="hero-lines"></div>
+                <div class="hero-particles">
+                    <span class="particle particle-1" aria-hidden="true"></span>
+                    <span class="particle particle-2" aria-hidden="true"></span>
+                    <span class="particle particle-3" aria-hidden="true"></span>
+                    <span class="particle particle-4" aria-hidden="true"></span>
+                    <span class="particle particle-5" aria-hidden="true"></span>
+                    <span class="particle particle-6" aria-hidden="true"></span>
+                    <span class="particle particle-7" aria-hidden="true"></span>
+                    <span class="particle particle-8" aria-hidden="true"></span>
+                    <span class="particle particle-9" aria-hidden="true"></span>
+                    <span class="particle particle-10" aria-hidden="true"></span>
+                    <span class="particle particle-11" aria-hidden="true"></span>
+                    <span class="particle particle-12" aria-hidden="true"></span>
+                    <span class="particle particle-13" aria-hidden="true"></span>
+                    <span class="particle particle-14" aria-hidden="true"></span>
+                    <span class="particle particle-15" aria-hidden="true"></span>
+                    <span class="particle particle-16" aria-hidden="true"></span>
+                    <span class="particle particle-17" aria-hidden="true"></span>
+                    <span class="particle particle-18" aria-hidden="true"></span>
+                    <span class="particle particle-19" aria-hidden="true"></span>
+                    <span class="particle particle-20" aria-hidden="true"></span>
+                    <span class="particle particle-21" aria-hidden="true"></span>
+                    <span class="particle particle-22" aria-hidden="true"></span>
+                    <span class="particle particle-23" aria-hidden="true"></span>
+                    <span class="particle particle-24" aria-hidden="true"></span>
+                    <span class="particle particle-25" aria-hidden="true"></span>
+                    <span class="particle particle-26" aria-hidden="true"></span>
+                    <span class="particle particle-27" aria-hidden="true"></span>
+                    <span class="particle particle-28" aria-hidden="true"></span>
+                    <span class="particle particle-29" aria-hidden="true"></span>
+                    <span class="particle particle-30" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content" data-parallax-layer="0.05">
+                    <p class="eyebrow reveal blur-reveal">Premium Creative Marketing Agency</p>
+                    <h1 class="hero-title text-reveal" id="hero-title">
+                        <span>We Build Brands</span>
+                        <span>That People Remember.</span>
+                    </h1>
+                    <p class="hero-subtitle reveal fade-up">
+                        Nexora Media helps businesses grow through creative content, social media marketing, branding,
+                        paid advertising, video production, and modern website development.
+                    </p>
+                    <div class="hero-actions reveal fade-up">
+                        <a href="https://wa.me/918895707670?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services."
+                            class="btn btn-primary magnetic-button" target="_blank" rel="noopener noreferrer"
+                            data-ripple>
+                            <span>Get a Quote</span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </a>
+                        <a href="#services" class="btn btn-secondary magnetic-button" data-ripple>
+                            <span>Explore Services</span>
+                            <span class="btn-icon" aria-hidden="true">↓</span>
+                        </a>
+                    </div>
+                    <div class="hero-trust-strip reveal fade-up" aria-label="Nexora Media trust values">
+                        <span>Creative Strategy</span>
+                        <span>Premium Visuals</span>
+                        <span>Growth Focused</span>
+                    </div>
+                </div>
+                <div class="hero-visual" data-parallax-layer="0.12">
+                    <div class="hero-card glass-card tilt-card" data-tilt-card>
+                        <div class="hero-card-top">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            <span>Brand Experience System</span>
+                        </div>
+                        <div class="hero-card-logo-wrap">
+                            <img src="images/logo.png" data-logo-light="images/logo.png"
+                                data-logo-dark="images/logo-dark.png" alt="Nexora Media Logo" class="hero-card-logo">
+                            <div class="orbital-field" aria-hidden="true">
+                                <span class="orbit-dot orbit-dot-1" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-2" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-3" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-4" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-5" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-6" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-7" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-8" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-9" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-10" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-11" aria-hidden="true"></span>
+                                <span class="orbit-dot orbit-dot-12" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="hero-card-stack">
+                            <div class="mini-card mini-card-one"><span>Branding</span><strong>Identity</strong></div>
+                            <div class="mini-card mini-card-two"><span>Growth</span><strong>Campaigns</strong></div>
+                            <div class="mini-card mini-card-three"><span>Creative</span><strong>Content</strong></div>
+                        </div>
+                    </div>
+                    <div class="floating-shape floating-cube" aria-hidden="true"></div>
+                    <div class="floating-shape floating-ring" aria-hidden="true"></div>
+                    <div class="floating-shape floating-pill" aria-hidden="true"></div>
+                </div>
+            </div>
+            <div class="section-wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" focusable="false">
+                    <path
+                        d="M0,72 C180,120 300,24 480,56 C720,96 840,124 1080,58 C1240,14 1340,44 1440,20 L1440,120 L0,120 Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about section section-soft" id="about" aria-labelledby="about-title">
+            <div class="container about-container">
+                <div class="about-visual reveal fade-left">
+                    <div class="about-illustration glass-card tilt-card" data-tilt-card>
+                        <div class="illustration-grid" aria-hidden="true"></div>
+                        <div class="illustration-core">
+                            <img src="images/logo.png" data-logo-light="images/logo.png"
+                                data-logo-dark="images/logo-dark.png" alt="Nexora Media Logo" class="illustration-logo">
+                            <span class="pulse-ring ring-one" aria-hidden="true"></span>
+                            <span class="pulse-ring ring-two" aria-hidden="true"></span>
+                            <span class="pulse-ring ring-three" aria-hidden="true"></span>
+                        </div>
+                        <div class="floating-tag tag-one">Strategy</div>
+                        <div class="floating-tag tag-two">Creative</div>
+                        <div class="floating-tag tag-three">Growth</div>
+                    </div>
+                </div>
+                <div class="about-content reveal fade-right">
+                    <p class="eyebrow">About Nexora Media</p>
+                    <h2 id="about-title">A creative partner for brands that want to look premium and grow with
+                        confidence.</h2>
+                    <p>
+                        Nexora Media is a creative marketing agency helping businesses grow through powerful content,
+                        strategic branding, social media marketing, advertising, and modern digital experiences. We
+                        combine creativity, strategy, and technology to help businesses establish a strong online
+                        presence and achieve measurable growth.
+                    </p>
+                    <div class="about-points" role="list" aria-label="Nexora Media approach">
+                        <div class="about-point" role="listitem"><span aria-hidden="true">01</span><strong>Clear brand
+                                positioning</strong></div>
+                        <div class="about-point" role="listitem"><span aria-hidden="true">02</span><strong>Content made
+                                for attention</strong></div>
+                        <div class="about-point" role="listitem"><span aria-hidden="true">03</span><strong>Digital
+                                experiences that convert</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="services section" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header section-header-centered">
+                    <p class="eyebrow reveal blur-reveal">Our Services</p>
+                    <h2 id="services-title" class="reveal fade-up">Everything your brand needs to look sharp, grow
+                        faster and feel unforgettable.</h2>
+                    <p class="section-lead reveal fade-up">Choose one service or build a complete creative growth system
+                        with Nexora Media.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Social Media Management">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="M7 2h2v3h6V2h2v3h3v17H4V5h3V2Zm11 8H6v10h12V10Z" />
+                                </svg></div>
+                            <span class="service-count">01</span>
+                            <h3>Social Media Management</h3>
+                            <p>Strategic content calendars, captions, publishing support and performance-led community
+                                growth.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Social Media Management">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Content Creation">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2Zm6 12 1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3ZM5 13l.8 2.2L8 16l-2.2.8L5 19l-.8-2.2L2 16l2.2-.8L5 13Z" />
+                                </svg></div>
+                            <span class="service-count">02</span>
+                            <h3>Content Creation</h3>
+                            <p>Premium content concepts, scripts, visuals and platform-ready creative assets.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Content Creation">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Video Editing">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="M4 4h16v16H4V4Zm6 4v8l7-4-7-4Z" />
+                                </svg></div>
+                            <span class="service-count">03</span>
+                            <h3>Video Editing</h3>
+                            <p>Short-form reels, launch videos, brand edits and polished social-first storytelling.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Video Editing">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Graphic Design">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="m17 3 4 4L9 19l-6 2 2-6L17 3Zm-1 4L7 16l1 1 9-9-1-1Z" />
+                                </svg></div>
+                            <span class="service-count">04</span>
+                            <h3>Graphic Design</h3>
+                            <p>Modern creatives for campaigns, posts, ads, brochures, banners and brand moments.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Graphic Design">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Branding & Identity">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="m12 2 2.4 1.6 2.8-.3 1.2 2.6 2.4 1.6-.6 2.8.6 2.8-2.4 1.6-1.2 2.6-2.8-.3L12 19l-2.4-1.6-2.8.3-1.2-2.6-2.4-1.6.6-2.8-.6-2.8 2.4-1.6 1.2-2.6 2.8.3L12 2Zm4.3 7.2-1.4-1.4-3.7 3.7-1.9-1.9-1.4 1.4 3.3 3.3 5.1-5.1Z" />
+                                </svg></div>
+                            <span class="service-count">05</span>
+                            <h3>Branding & Identity</h3>
+                            <p>Positioning, tone, visual systems and memorable identity assets for your brand.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Branding & Identity">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Logo Design">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M6.5 3h11L22 8l-10 13L2 8l4.5-5Zm1 2L5.2 8h4.1l1.2-3h-3Zm5 0-1.2 3h5.4l-1.2-3h-3Zm-7 5 5 6.6L8.8 10H5.5Zm5.4 0L12 17.4 13.1 10h-2.2Zm4.3 0-1.7 6.6 5-6.6h-3.3Z" />
+                                </svg></div>
+                            <span class="service-count">06</span>
+                            <h3>Logo Design</h3>
+                            <p>Clean, premium logos with flexible lockups for web, social media and print use.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Logo Design">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Website Design & Development">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="M3 4h18v12H3V4Zm2 2v8h14V6H5Zm5 12h4v2h4v2H6v-2h4v-2Z" />
+                                </svg></div>
+                            <span class="service-count">07</span>
+                            <h3>Website Design & Development</h3>
+                            <p>Fast, responsive, conversion-focused websites with modern UI and clean code.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Website Design & Development">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Meta Ads">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 10 10h-2a8 8 0 1 1-8-8V2Zm0 4a6 6 0 1 0 6 6h-2a4 4 0 1 1-4-4V6Zm1 5.6 6.4-6.4 1.4 1.4-8 8H11v-1.8Z" />
+                                </svg></div>
+                            <span class="service-count">08</span>
+                            <h3>Meta Ads</h3>
+                            <p>Campaign strategy, creative testing and optimization for Instagram and Facebook growth.
+                            </p>
+                            <a href="#contact" class="service-link magnetic-link" aria-label="Ask about Meta Ads">Start
+                                this service <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Google Ads">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.3 4.2-1.4 1.5-4.3-4.3A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z" />
+                                </svg></div>
+                            <span class="service-count">09</span>
+                            <h3>Google Ads</h3>
+                            <p>Search-focused paid campaigns that help customers find your business at the right moment.
+                            </p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Google Ads">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0" aria-label="SEO">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path d="M3 17.2 9.5 10.7l4 4L21 7.2V13h-2v-2.4l-5.5 5.5-4-4-5.1 6.5L3 17.2Z" />
+                                </svg></div>
+                            <span class="service-count">10</span>
+                            <h3>SEO</h3>
+                            <p>Technical setup, content structure and search-friendly pages built for long-term
+                                visibility.</p>
+                            <a href="#contact" class="service-link magnetic-link" aria-label="Ask about SEO">Start this
+                                service <span aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Photography">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M8 5l1.5-2h5L16 5h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4Zm4 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" />
+                                </svg></div>
+                            <span class="service-count">11</span>
+                            <h3>Photography</h3>
+                            <p>Professional brand, product, team and lifestyle photography planning and direction.</p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Photography">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                    <article class="service-card tilt-card reveal fade-up" data-tilt-card tabindex="0"
+                        aria-label="Videography">
+                        <div class="card-gradient-border" aria-hidden="true"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon"><svg class="service-icon-svg" viewBox="0 0 24 24"
+                                    aria-hidden="true" focusable="false">
+                                    <path
+                                        d="M3 5h12a2 2 0 0 1 2 2v2.2l4-2.3V17l-4-2.3V17a2 2 0 0 1-2 2H3V5Zm2 2v10h10V7H5Z" />
+                                </svg></div>
+                            <span class="service-count">12</span>
+                            <h3>Videography</h3>
+                            <p>Premium video concepts, shot planning and production support for digital-first campaigns.
+                            </p>
+                            <a href="#contact" class="service-link magnetic-link"
+                                aria-label="Ask about Videography">Start this service <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="portfolio section section-dark-panel" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="container portfolio-container">
+                <div class="portfolio-copy reveal fade-left">
+                    <p class="eyebrow">Our Work</p>
+                    <h2 id="portfolio-title">Short-form content showcase built in a premium horizontal reel row.</h2>
+                    <p>
+                        Showcase your best YouTube videos and Instagram Reels together in one  ̰premium horizontal
+                        portfolio row.
+                        Replace the placeholder links with your own video links whenever needed.
+                    </p>
+                    <div class="portfolio-actions">
+                        <a href="#contact" class="btn btn-light magnetic-button" data-ripple>
+                            <span>Plan My Content</span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work-row-wrap reveal fade-right" aria-label="Nexora Media portfolio video row">
+                    <div class="work-row" data-horizontal-scroll>
+
+                        <!-- YouTube Video Card -->
+                        <article class="work-card reveal zoom-in" data-video-card data-video-type="youtube" tabindex="0">
+                            <div class="work-frame youtube-frame">
+                                <iframe
+                                    title="Nexora Media portfolio video - Real Estate Reel"
+                                    src="https://www.youtube.com/embed/g5gzHASupoY?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="work-title-row">
+                                <h3>Cafe Walkaround</h3>
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </article>
+
+                        <!-- Instagram Reel Card -->
+                        <article class="work-card reveal zoom-in" data-video-card data-video-type="instagram"
+                            tabindex="0">
+                            <div class="work-frame instagram-frame">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/Da5FUyzvW0a/?igsh=OWJqYWF3Nm85Ym94"
+                                    data-instgrm-version="14">
+                                </blockquote>
+                            </div>
+                            <div class="work-title-row">
+                                <h3>Restaurant Video</h3>
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </article>
+
+                        <!-- YouTube Video Card -->
+                        <article class="work-card reveal zoom-in" data-video-card data-video-type="youtube" tabindex="0">
+                            <div class="work-frame youtube-frame">
+                                <iframe
+                                    title="Nexora Media portfolio video - Real Estate Reel"
+                                    src="https://www.youtube.com/embed/cx6V1vOEKwg?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="work-title-row">
+                                <h3>Real Estate Reel</h3>
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </article>
+
+                        <!-- Instagram Reel Card -->
+                        <article class="work-card reveal zoom-in" data-video-card data-video-type="instagram"
+                            tabindex="0">
+                            <div class="work-frame instagram-frame">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DUas6bxkQcw/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+                                    data-instgrm-version="14">
+                                </blockquote>
+                            </div>
+                            <div class="work-title-row">
+                                <h3>Event Introduction</h3>
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </article>
+
+                        <!-- Instagram Reel Card -->
+                        <article class="work-card reveal zoom-in" data-video-card data-video-type="instagram"
+                            tabindex="0">
+                            <div class="work-frame instagram-frame">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/reel/DbDwgafPS12/?utm_source=ig_web_button_share_sheet"
+                                    data-instgrm-version="14">
+                                </blockquote>
+                            </div>
+                            <div class="work-title-row">
+                                <h3>Social Media Campaign</h3>
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <p class="work-row-hint">Scroll sideways to view all videos →</p>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us Section -->
+        <section class="why section" id="why-choose-us" aria-labelledby="why-title">
+            <div class="container">
+                <div class="section-header section-header-centered">
+                    <p class="eyebrow reveal blur-reveal">Why Choose Us</p>
+                    <h2 id="why-title" class="reveal fade-up">Premium execution with practical strategy and clear
+                        communication.</h2>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card tilt-card reveal fade-up" data-tilt-card tabindex="0">
+                        <div class="feature-check" aria-hidden="true">✓</div>
+                        <h3>Creative Strategy</h3>
+                        <p>We start with positioning, audience intent and a message that makes the brand feel clear.</p>
+                    </article>
+                    <article class="feature-card tilt-card reveal fade-up" data-tilt-card tabindex="0">
+                        <div class="feature-check" aria-hidden="true">✓</div>
+                        <h3>Results Driven</h3>
+                        <p>Every creative decision supports visibility, trust, leads and measurable growth.</p>
+                    </article>
+                    <article class="feature-card tilt-card reveal fade-up" data-tilt-card tabindex="0">
+                        <div class="feature-check" aria-hidden="true">✓</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Lean workflows help your brand move quickly without sacrificing quality.</p>
+                    </article>
+                    <article class="feature-card tilt-card reveal fade-up" data-tilt-card tabindex="0">
+                        <div class="feature-check" aria-hidden="true">✓</div>
+                        <h3>Dedicated Support</h3>
+                        <p>You get responsive communication, guidance and practical support throughout.</p>
+                    </article>
+                    <article class="feature-card tilt-card reveal fade-up" data-tilt-card tabindex="0">
+                        <div class="feature-check" aria-hidden="true">✓</div>
+                        <h3>Transparent Communication</h3>
+                        <p>Clear updates, deliverables and simple timelines keep every project aligned.</p>
+                    </article>
+                    <article class="feature-card tilt-card reveal fade-up" data-tilt-card tabindex="0">
+                        <div class="feature-check" aria-hidden="true">✓</div>
+                        <h3>Affordable Solutions</h3>
+                        <p>Premium quality with sensible packages made for new and growing businesses.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Process Section -->
+        <section class="process section section-soft" id="process" aria-labelledby="process-title">
+            <div class="container process-container">
+                <div class="section-header process-header">
+                    <p class="eyebrow reveal blur-reveal">Our Process</p>
+                    <h2 id="process-title" class="reveal fade-up">A simple, premium workflow from idea to launch and
+                        growth.</h2>
+                </div>
+                <div class="timeline" aria-label="Nexora Media process timeline">
+                    <div class="timeline-line" aria-hidden="true"></div>
+                    <article class="timeline-step reveal fade-right" tabindex="0">
+                        <div class="timeline-marker" aria-hidden="true"><span>01</span></div>
+                        <div class="timeline-content">
+                            <p class="eyebrow">Step 1</p>
+                            <h3>Discovery</h3>
+                            <p>We understand your business, audience, goals, competitors and current digital presence.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="timeline-step reveal fade-right" tabindex="0">
+                        <div class="timeline-marker" aria-hidden="true"><span>02</span></div>
+                        <div class="timeline-content">
+                            <p class="eyebrow">Step 2</p>
+                            <h3>Planning</h3>
+                            <p>We create a strategy, content direction, timeline and conversion path before production
+                                starts.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-step reveal fade-right" tabindex="0">
+                        <div class="timeline-marker" aria-hidden="true"><span>03</span></div>
+                        <div class="timeline-content">
+                            <p class="eyebrow">Step 3</p>
+                            <h3>Design</h3>
+                            <p>We craft visuals, pages, reels, campaigns and brand assets with a premium creative
+                                system.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-step reveal fade-right" tabindex="0">
+                        <div class="timeline-marker" aria-hidden="true"><span>04</span></div>
+                        <div class="timeline-content">
+                            <p class="eyebrow">Step 4</p>
+                            <h3>Launch</h3>
+                            <p>We publish, test, optimize and make sure every experience works smoothly across devices.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="timeline-step reveal fade-right" tabindex="0">
+                        <div class="timeline-marker" aria-hidden="true"><span>05</span></div>
+                        <div class="timeline-content">
+                            <p class="eyebrow">Step 5</p>
+                            <h3>Growth</h3>
+                            <p>We review performance, improve the creative direction and help your brand scale steadily.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="faq section" id="faq" aria-labelledby="faq-title">
+            <div class="container faq-container">
+                <div class="section-header">
+                    <p class="eyebrow reveal blur-reveal">FAQ</p>
+                    <h2 id="faq-title" class="reveal fade-up">Questions businesses usually ask before working with
+                        Nexora Media.</h2>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item reveal fade-up">
+                        <h3>
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-1"
+                                id="faq-button-1">
+                                <span>What services do you offer?</span>
+                                <span class="faq-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-panel-1" role="region" aria-labelledby="faq-button-1">
+                            <p>Nexora Media offers social media management, content creation, video editing, graphic
+                                design, branding, logo design, website design and development, Meta Ads, Google Ads,
+                                SEO, photography and videography.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal fade-up">
+                        <h3>
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-2"
+                                id="faq-button-2">
+                                <span>How long does a project take?</span>
+                                <span class="faq-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-panel-2" role="region" aria-labelledby="faq-button-2">
+                            <p>Timelines depend on the scope. Small design or content tasks may take a few days, while
+                                full branding or website projects usually require a planned timeline after discovery.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal fade-up">
+                        <h3>
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-3"
+                                id="faq-button-3">
+                                <span>Can you manage our social media monthly?</span>
+                                <span class="faq-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-panel-3" role="region" aria-labelledby="faq-button-3">
+                            <p>Yes. Nexora Media can handle monthly content planning, creative design, posting support,
+                                reels, captions and campaign direction based on your brand needs.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal fade-up">
+                        <h3>
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-4"
+                                id="faq-button-4">
+                                <span>Do you work with startups?</span>
+                                <span class="faq-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-panel-4" role="region" aria-labelledby="faq-button-4">
+                            <p>Yes. Nexora Media is built to support new and growing businesses that need a professional
+                                brand presence without unnecessary complexity.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal fade-up">
+                        <h3>
+                            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-panel-5"
+                                id="faq-button-5">
+                                <span>How can I contact Nexora Media?</span>
+                                <span class="faq-icon" aria-hidden="true"></span>
+                            </button>
+                        </h3>
+                        <div class="faq-answer" id="faq-panel-5" role="region" aria-labelledby="faq-button-5">
+                            <p>You can contact Nexora Media by phone, WhatsApp, email or Instagram. The contact section
+                                includes all official details and a quick inquiry form.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact section section-soft" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-container">
+                <div class="contact-info reveal fade-left">
+                    <p class="eyebrow">Contact Nexora Media</p>
+                    <h2 id="contact-title">Ready to build a brand people remember?</h2>
+                    <p>Share your requirement and Nexora Media will help you choose the right creative, marketing or
+                        website solution for your business.</p>
+                    <div class="contact-cards" aria-label="Nexora Media contact information">
+                        <a class="contact-card magnetic-link" href="tel:+918895707670"><span>Phone</span><strong>+91
+                                8895707670</strong></a>
+                        <a class="contact-card magnetic-link"
+                            href="https://wa.me/918895707670?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services."
+                            target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>+91
+                                8895707670</strong></a>
+                        <a class="contact-card magnetic-link"
+                            href="mailto:teamnexoramediain@gmail.com"><span>Email</span><strong>teamnexoramediain@gmail.com</strong></a>
+                        <a class="contact-card magnetic-link" href="https://www.instagram.com/nexoramediain"
+                            target="_blank"
+                            rel="noopener noreferrer"><span>Instagram</span><strong>@nexoramediain</strong></a>
+                        <div class="contact-card"><span>Location</span><strong>Remote</strong></div>
+                        <div class="contact-card"><span>Business Name</span><strong>Nexora Media</strong></div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal fade-right">
+                    <form class="contact-form glass-card" id="contact-form" action="https://api.web3forms.com/submit"
+                        method="POST" novalidate>
+                        <input type="hidden" name="access_key" value="60cc9899-4534-4f25-9763-e1108e316908">
+                        <input type="hidden" name="subject" value="New Nexora Media Website Inquiry">
+                        <input type="hidden" name="from_name" value="Nexora Media Website">
+                        <input type="checkbox" name="botcheck" class="hidden-honeypot" tabindex="-1" autocomplete="off"
+                            aria-hidden="true">
+                        <div class="form-heading">
+                            <h3>Send Inquiry</h3>
+                            <p>All fields are required. Your inquiry will be sent directly to Nexora Media.</p>
+                        </div>
+                        <div class="form-grid">
+                            <label class="form-field">
+                                <span>Full Name</span>
+                                <input type="text" name="Full Name" placeholder="Your full name" autocomplete="name"
+                                    required>
+                                <small class="error-message"></small>
+                            </label>
+                            <label class="form-field">
+                                <span>Company Name</span>
+                                <input type="text" name="Company Name" placeholder="Your company name"
+                                    autocomplete="organization" required>
+                                <small class="error-message"></small>
+                            </label>
+                            <label class="form-field">
+                                <span>Email Address</span>
+                                <input type="email" name="Email Address" placeholder="you@example.com"
+                                    autocomplete="email" required>
+                                <small class="error-message"></small>
+                            </label>
+                            <label class="form-field">
+                                <span>Phone Number</span>
+                                <input type="tel" name="Phone Number" placeholder="+91 00000 00000" autocomplete="tel"
+                                    required>
+                                <small class="error-message"></small>
+                            </label>
+                            <label class="form-field">
+                                <span>Service Required</span>
+                                <select name="Service Required" required>
+                                    <option value="">Select a service</option>
+                                    <option>Social Media Management</option>
+                                    <option>Content Creation</option>
+                                    <option>Video Editing</option>
+                                    <option>Graphic Design</option>
+                                    <option>Branding & Identity</option>
+                                    <option>Logo Design</option>
+                                    <option>Website Design & Development</option>
+                                    <option>Meta Ads</option>
+                                    <option>Google Ads</option>
+                                    <option>SEO</option>
+                                    <option>Photography</option>
+                                    <option>Videography</option>
+                                </select>
+                                <small class="error-message"></small>
+                            </label>
+                            <label class="form-field">
+                                <span>Estimated Budget</span>
+                                <select name="Estimated Budget" required>
+                                    <option value="">Select budget range</option>
+                                    <option>Under ₹10,000</option>
+                                    <option>₹10,000 - ₹25,000</option>
+                                    <option>₹25,000 - ₹50,000</option>
+                                    <option>₹50,000+</option>
+                                    <option>Need guidance</option>
+                                </select>
+                                <small class="error-message"></small>
+                            </label>
+                            <label class="form-field form-field-full">
+                                <span>Message</span>
+                                <textarea name="Message" rows="6"
+                                    placeholder="Tell us about your business, goal, timeline and service requirement."
+                                    required></textarea>
+                                <small class="error-message"></small>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary form-submit magnetic-button" type="submit" data-ripple>
+                            <span class="submit-text">Send Inquiry</span>
+                            <span class="submit-spinner" aria-hidden="true"></span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                        <p class="form-note">By submitting this form, you agree to be contacted by Nexora Media
+                            regarding your inquiry.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer" aria-labelledby="footer-title">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="brand footer-logo-link magnetic-link" aria-label="Nexora Media home">
+                    <img src="images/logo.png" data-logo-light="images/logo.png" data-logo-dark="images/logo-dark.png"
+                        alt="Nexora Media Logo" class="brand-logo">
+                    <span class="brand-name">Nexora Media</span>
+                </a>
+                <h2 id="footer-title" class="sr-only">Nexora Media footer information</h2>
+                <p>Nexora Media helps businesses grow with premium content, branding, social media marketing, ads, video
+                    and modern digital experiences.</p>
+                <a href="https://www.instagram.com/nexoramediain" class="footer-social magnetic-link" target="_blank"
+                    rel="noopener noreferrer">Instagram ↗</a>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul role="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul role="list">
+                    <li>Social Media Management</li>
+                    <li>Content Creation</li>
+                    <li>Video Editing</li>
+                    <li>Branding & Identity</li>
+                    <li>Website Design & Development</li>
+                    <li>Meta Ads & Google Ads</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul role="list">
+                    <li><a href="tel:+918895707670">+91 8895707670</a></li>
+                    <li><a href="mailto:teamnexoramediain@gmail.com">teamnexoramediain@gmail.com</a></li>
+                    <li><a href="https://wa.me/918895707670?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services."
+                            target="_blank" rel="noopener noreferrer">WhatsApp Nexora Media</a></li>
+                    <li>Remote</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© <span id="current-year"></span> Nexora Media. All rights reserved.</p>
+                <p>Built for premium digital growth.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Buttons -->
+    <div class="floating-actions" aria-label="Quick contact actions">
+        <a class="floating-action whatsapp-action magnetic-button"
+            href="https://wa.me/918895707670?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services."
+            target="_blank" rel="noopener noreferrer" aria-label="Chat with Nexora Media on WhatsApp"><span
+                aria-hidden="true">☏</span></a>
+        <a class="floating-action call-action magnetic-button" href="tel:+918895707670"
+            aria-label="Call Nexora Media"><span aria-hidden="true">☎</span></a>
+        <button class="floating-action scroll-top-action magnetic-button" type="button" id="scroll-top"
+            aria-label="Scroll to top"><span aria-hidden="true">↑</span></button>
+    </div>
+    <!-- Success Popup -->
+    <div class="success-modal" id="success-modal" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="success-title">
+        <div class="success-backdrop" data-close-modal></div>
+        <div class="success-card glass-card" role="document">
+            <div class="success-animation" aria-hidden="true">
+                <svg viewBox="0 0 72 72" focusable="false">
+                    <circle cx="36" cy="36" r="32"></circle>
+                    <path d="M22 37.5 31.2 46 51 25"></path>
+                </svg>
+            </div>
+            <h2 id="success-title">Inquiry Sent Successfully</h2>
+            <p>Thank you for contacting Nexora Media. We will get back to you as soon as possible.</p>
+            <button class="btn btn-primary magnetic-button" type="button" data-close-modal
+                data-ripple><span>Close</span></button>
+        </div>
+    </div>
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+
+</html>
