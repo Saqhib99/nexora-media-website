@@ -3233,3 +3233,400 @@ body.cursor-view .cursor-label {
     border-radius: 22px !important;
     overflow: hidden !important;
 }
+
+/* ============================================================================
+   Sticky navbar final fix
+   Keeps the navbar visible while scrolling on desktop and mobile.
+   This intentionally uses fixed positioning because some mobile/overflow patches
+   can make position: sticky unreliable in Chrome/Safari.
+   ============================================================================ */
+
+:root {
+    --nav-offset-desktop: 104px;
+    --nav-offset-tablet: 96px;
+    --nav-offset-mobile: 88px;
+}
+
+.site-header,
+.site-header.scrolled,
+.site-header.is-scrolled {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 3000 !important;
+    width: 100% !important;
+    padding: 16px 0 !important;
+    pointer-events: none;
+}
+
+.site-header.scrolled,
+.site-header.is-scrolled {
+    padding: 10px 0 !important;
+}
+
+.site-header .navbar {
+    pointer-events: auto;
+}
+
+main {
+    padding-top: var(--nav-offset-desktop);
+}
+
+#home,
+#about,
+#services,
+#portfolio,
+#faq,
+#contact,
+#process,
+#why-choose-us {
+    scroll-margin-top: var(--nav-offset-desktop);
+}
+
+.nav-panel {
+    z-index: 3001;
+}
+
+@media (max-width: 920px) {
+    .site-header,
+    .site-header.scrolled,
+    .site-header.is-scrolled {
+        padding: 12px 0 !important;
+    }
+
+    main {
+        padding-top: var(--nav-offset-tablet);
+    }
+
+    #home,
+    #about,
+    #services,
+    #portfolio,
+    #faq,
+    #contact,
+    #process,
+    #why-choose-us {
+        scroll-margin-top: var(--nav-offset-tablet);
+    }
+
+    .nav-panel {
+        position: fixed !important;
+        top: 88px !important;
+        left: 18px !important;
+        right: 18px !important;
+        z-index: 3001 !important;
+    }
+}
+
+@media (max-width: 680px) {
+    main {
+        padding-top: var(--nav-offset-mobile);
+    }
+
+    #home,
+    #about,
+    #services,
+    #portfolio,
+    #faq,
+    #contact,
+    #process,
+    #why-choose-us {
+        scroll-margin-top: var(--nav-offset-mobile);
+    }
+
+    .navbar {
+        width: min(100% - 24px, var(--container));
+    }
+
+    .nav-panel {
+        top: 82px !important;
+        left: 12px !important;
+        right: 12px !important;
+    }
+}
+
+/* ============================================================================
+   FINAL PATCH: mobile hero/card centering + navbar cursor visibility
+   Keep this block at the very end of styles.css.
+   Fixes:
+   1) hero visual/card/logo staying centered on phones
+   2) custom cursor disappearing over fixed navbar links
+   ============================================================================ */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    width: 100%;
+    overflow-x: clip;
+}
+
+/* The fixed navbar has z-index 3000, so the custom cursor must be above it. */
+.cursor-dot,
+.cursor-ring,
+.cursor-label {
+    z-index: 5005 !important;
+}
+
+/* Keep the mouse usable on the navbar even when custom cursor mode is active. */
+html.custom-cursor-active .navbar,
+html.custom-cursor-active .nav-panel {
+    cursor: default !important;
+}
+
+html.custom-cursor-active .navbar a,
+html.custom-cursor-active .navbar button,
+html.custom-cursor-active .nav-panel a,
+html.custom-cursor-active .nav-panel button,
+html.custom-cursor-active .brand,
+html.custom-cursor-active .nav-link,
+html.custom-cursor-active .nav-toggle,
+html.custom-cursor-active .theme-toggle,
+html.custom-cursor-active .btn {
+    cursor: pointer !important;
+}
+
+@media (max-width: 920px) {
+    .site-header,
+    .site-header.scrolled,
+    .site-header.is-scrolled {
+        padding: 12px 0 !important;
+    }
+
+    .navbar {
+        width: min(100% - 28px, 1240px) !important;
+        max-width: none !important;
+        min-height: 72px;
+        margin-inline: auto !important;
+    }
+
+    .hero {
+        min-height: auto !important;
+        padding-top: 28px !important;
+        overflow: hidden !important;
+    }
+
+    .hero-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 34px !important;
+        text-align: center !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 660px !important;
+        margin-inline: auto !important;
+    }
+
+    .hero-content .eyebrow,
+    .hero-actions,
+    .hero-trust-strip {
+        justify-content: center !important;
+    }
+
+    .hero-title,
+    .hero-subtitle {
+        margin-inline: auto !important;
+    }
+
+    .hero-visual {
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 16px 0 68px !important;
+        perspective: none !important;
+        overflow: visible !important;
+    }
+
+    .hero-card,
+    .hero-card.tilt-card {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: min(100%, 390px) !important;
+        max-width: calc(100vw - 40px) !important;
+        min-height: 470px !important;
+        margin: 0 auto !important;
+        transform: none !important;
+        translate: none !important;
+        rotate: 0deg !important;
+    }
+
+    .hero-card-logo-wrap {
+        display: grid !important;
+        place-items: center !important;
+    }
+
+    .hero-card-logo {
+        margin-inline: auto !important;
+    }
+
+    .floating-cube {
+        top: 0 !important;
+        right: 8% !important;
+        width: 70px !important;
+        height: 70px !important;
+        opacity: 0.7;
+    }
+
+    .floating-ring,
+    .floating-pill {
+        display: none !important;
+    }
+
+    .section-wave {
+        height: 52px;
+    }
+
+    [data-parallax-layer] {
+        transform: none !important;
+    }
+}
+
+@media (max-width: 680px) {
+    .container,
+    .navbar {
+        width: min(100% - 24px, var(--container)) !important;
+    }
+
+    .hero {
+        padding-top: 18px !important;
+    }
+
+    .hero-title {
+        font-size: clamp(2.7rem, 14.8vw, 4.4rem);
+        line-height: 0.94;
+        letter-spacing: -0.075em;
+    }
+
+    .hero-subtitle {
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .hero-actions {
+        gap: 12px;
+        margin-top: 26px;
+    }
+
+    .hero-trust-strip {
+        margin-top: 22px;
+    }
+
+    .hero-trust-strip span {
+        min-height: 34px;
+        padding-inline: 12px;
+        font-size: 0.82rem;
+    }
+
+    .hero-visual {
+        padding-top: 4px !important;
+        padding-bottom: 56px !important;
+    }
+
+    .hero-card,
+    .hero-card.tilt-card {
+        width: min(100%, 342px) !important;
+        max-width: calc(100vw - 32px) !important;
+        min-height: 420px !important;
+        padding: 18px !important;
+        border-radius: 30px !important;
+    }
+
+    .hero-card-top {
+        font-size: 0.78rem;
+        line-height: 1.25;
+        text-align: left;
+    }
+
+    .hero-card-logo-wrap {
+        height: 214px !important;
+        margin-top: 10px !important;
+    }
+
+    .hero-card-logo {
+        width: min(230px, 82%) !important;
+    }
+
+    .orbital-field {
+        inset: 18px !important;
+    }
+
+    .orbit-dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .mini-card {
+        min-height: 58px;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .mini-card strong {
+        font-size: 0.98rem;
+    }
+
+    .floating-cube {
+        right: 10% !important;
+        width: 58px !important;
+        height: 58px !important;
+        border-radius: 18px;
+    }
+
+    .floating-actions {
+        right: 10px;
+        bottom: 14px;
+        gap: 8px;
+    }
+
+    .floating-action {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 390px) {
+    .brand-logo {
+        width: 128px;
+        max-height: 40px;
+    }
+
+    .nav-toggle {
+        width: 46px;
+        height: 46px;
+    }
+
+    .hero-card,
+    .hero-card.tilt-card {
+        width: min(100%, 318px) !important;
+        max-width: calc(100vw - 28px) !important;
+        min-height: 400px !important;
+        padding: 16px !important;
+    }
+
+    .hero-card-logo-wrap {
+        height: 198px !important;
+    }
+
+    .orbital-field {
+        inset: 20px !important;
+    }
+}
