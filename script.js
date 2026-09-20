@@ -12,7 +12,7 @@
     const CONFIG = {
         web3FormsEndpoint: "https://api.web3forms.com/submit",
         web3FormsAccessKey: "60cc9899-4534-4f25-9763-e1108e316908",
-        whatsappUrl: "https://wa.me/918895707670?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services.",
+        whatsappUrl: "https://wa.me/918882722257?text=Hi%20Nexora%20Media,%20I'm%20interested%20in%20your%20services.",
         mobileCursorBreakpoint: 900,
         loaderDuration: 1500,
         navShrinkPoint: 60,
